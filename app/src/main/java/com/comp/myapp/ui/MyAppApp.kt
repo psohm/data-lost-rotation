@@ -17,7 +17,7 @@ fun MyAppApp(
         {
             composable(Screen.ProductAddPath.route) {
                 ProductEditView(
-                    vm = ProductEditViewModel (appState.context)
+                    vm = ProductEditViewModel ()
                 )
             }
         }

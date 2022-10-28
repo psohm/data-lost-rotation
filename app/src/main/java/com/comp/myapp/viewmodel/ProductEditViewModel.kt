@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 
-class ProductEditViewModel(context: Context) : ViewModel() {
+class ProductEditViewModel() : ViewModel() {
 
     private val _productName = MutableStateFlow("qsd")
     val productName = _productName.asStateFlow()
@@ -18,5 +18,9 @@ class ProductEditViewModel(context: Context) : ViewModel() {
         _productName.value = it
     }
 
+    init
+    {
+        System.out.println("ProductEditViewModel");
+    }
 
 }
