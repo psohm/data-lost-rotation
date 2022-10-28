@@ -1,4 +1,4 @@
-package com.comp.myapp.viewmodel
+package com.comp.myapp.ui.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 
-class ProductEditViewModel() : ViewModel() {
+class ProductEditViewModel : ViewModel() {
 
     private val _productName = MutableStateFlow("qsd")
     val productName = _productName.asStateFlow()

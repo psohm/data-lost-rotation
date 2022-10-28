@@ -17,7 +17,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
-import com.comp.myapp.viewmodel.ProductEditViewModel
+import com.comp.myapp.ui.viewmodel.ProductEditViewModel
 
 @Composable
 fun ProductEditView(vm: ProductEditViewModel) {
